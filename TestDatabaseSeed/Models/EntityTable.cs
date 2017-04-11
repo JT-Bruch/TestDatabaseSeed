@@ -13,7 +13,7 @@ namespace TestDatabaseSeed.Models
     {
       var seedData = new List<EntityTable>
       {
-        new EntityTable() {Id = 710, Occur = 1},
+        new EntityTable() {Id = 0, Occur = 1},
         new EntityTable() {Id = 682, Occur = 1},
         new EntityTable() {Id = 719, Occur = 1},
       };

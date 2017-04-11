@@ -63,17 +63,6 @@ namespace TestDatabaseSeed
         throw new Exception("Migrations not applied.");
       }
 
-      /*
-      THIS DOES NOT WORK..
-      
-
-      EntityTable.AddRange(Models.EntityTable.EnsureSeedData());
-      Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.EntityTable ON");
-      var changeCount = SaveChanges();
-      return changeCount;
-     */
-
-      // This works
 
       EntityTable.AddRange(Models.EntityTable.EnsureSeedData());
       Database.OpenConnection();
